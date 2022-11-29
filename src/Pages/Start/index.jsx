@@ -1,17 +1,21 @@
-import React from 'react'
+import styles from './styles.jsx'
+
 import { Image, ScrollView, Text, View } from 'react-native'
+import { LifeStatus } from '../../components/LifeStatus/index.jsx'
 
 function Start() {
 
   return (
-    <View>
+    <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View>
+        <View style={{ alignItems: 'center' }}>
           <Image
             source={require('../../assets/icons/logo3.png')}
+            style={styles.logo}
           />
-          <Text>
-            Vamos transformar sua vida {"/n"} em jogo, buscando sempre {"/n"} o melhor nível.
+          <LifeStatus />
+          <Text style={styles.description}>
+            Vamos transformar sua vida {"\n"} em jogo, buscando sempre {"\n"} o melhor nível.
           </Text>
         </View>
       </ScrollView>

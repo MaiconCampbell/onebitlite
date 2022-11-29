@@ -10,9 +10,9 @@ function AllPages() {
     <NavigationContainer>
       <Stack.Navigator screenListeners={{
         headerShown: false
-      }} />
-
-      <Stack.Screen name="Start" component={Start} />
+      }}>
+        <Stack.Screen name="Start" component={Start} options={{ headerShown: false }} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
