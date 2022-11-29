@@ -1,10 +1,11 @@
 import styles from './styles.jsx'
 
 import React from 'react'
-import { ScrollView, View } from 'react-native'
+import { ScrollView, View, Text } from 'react-native'
 import DefaultButton from '../../components/DefaultButton'
+import { ExplanationCard } from '../../components/ExplanationCard'
 
-export default function AppExplanation() {
+function AppExplanation() {
   function handleSetShowHome() {
     console.log("Home navegando")
   }
@@ -16,11 +17,12 @@ export default function AppExplanation() {
           <Text style={styles.title}>
             Antes, deixe {'\n'} eu te explicar ...
           </Text>
+          <ExplanationCard/>
           <Text style={styles.descriptionCta}>
             Pronto(a) para subir de nível na vida?
           </Text>
           <Text style={styles.description}>
-            Na próxima tela você vai poder escolher {'\n'} seus 4 hábitos de forma individual
+            Na próxima tela você vai poder escolher {'\n'} seus 4 hábitos de forma individual.
           </Text>
           <DefaultButton
             buttonText={"Continuar"}
@@ -33,3 +35,5 @@ export default function AppExplanation() {
     </View>
   )
 }
+
+export { AppExplanation }

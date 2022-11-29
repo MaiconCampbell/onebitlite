@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(21, 21, 21, .98)",
   },
   title: {
+    color: '#FFF',
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
