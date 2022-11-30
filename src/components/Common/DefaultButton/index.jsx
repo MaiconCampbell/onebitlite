@@ -3,7 +3,7 @@ import styles from './styles'
 import React from 'react'
 import { Text, TouchableOpacity } from 'react-native'
 
-export default function DefaultButton({ buttonText, handlePress, width, heigth }) {
+function DefaultButton({ buttonText, handlePress, width, heigth }) {
   return (
     <TouchableOpacity
       style={[styles.button, { width: width, height: heigth }]}
@@ -14,3 +14,5 @@ export default function DefaultButton({ buttonText, handlePress, width, heigth }
     </TouchableOpacity>
   )
 }
+
+export { DefaultButton }

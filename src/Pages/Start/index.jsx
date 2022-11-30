@@ -1,14 +1,14 @@
 import styles from './styles.jsx'
 
 import { Image, ScrollView, Text, View } from 'react-native'
-import { LifeStatus } from '../../components/LifeStatus/index.jsx'
-import DefaultButton from '../../components/DefaultButton/index.jsx'
+import { LifeStatus } from '../../components/Common/LifeStatus'
+import { DefaultButton } from '../../components/Common/DefaultButton'
 import { useNavigation } from '@react-navigation/native'
 
 function Start() {
   const navigation = useNavigation()
 
-  const handleNavAppExplanation = () => {
+  function handleNavAppExplanation() {
     navigation.navigate("AppExplanation")
   }
 
@@ -25,7 +25,7 @@ function Start() {
             Vamos transformar sua vida {"\n"} em jogo, buscando sempre {"\n"} o melhor nível.
           </Text>
 
-          <DefaultButton 
+          <DefaultButton
             buttonText={"Continuar"}
             handlePress={handleNavAppExplanation}
             width={250}

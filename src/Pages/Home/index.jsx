@@ -2,15 +2,15 @@ import styles from './styles.jsx'
 
 import { useNavigation } from '@react-navigation/native'
 import { View, ScrollView, Text } from 'react-native'
-import { LifeStatus } from '../../components/LifeStatus'
+import { LifeStatus } from '../../components/Common/LifeStatus'
 
 
 function Home() {
   const navigation = useNavigation()
 
-  const handleNavExplanation = () => {
+  function handleNavExplanation () {
     navigation.navigate('AppExplanation')
-  }02:44:26
+  }
 
   return (
     <View style={styles.container}>

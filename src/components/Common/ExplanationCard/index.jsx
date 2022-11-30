@@ -12,7 +12,7 @@ function ExplanationCard() {
 
       <View style={styles.explanationContainer}>
         <Image
-          source={require('../../assets/icons/educationIcon.png')}
+          source={require('../../../assets/icons/educationIcon.png')}
           style={styles.icon}
         />
         <Text style={styles.description}>
@@ -22,7 +22,7 @@ function ExplanationCard() {
 
       <View style={styles.explanationContainer}>
         <Image
-          source={require('../../assets/icons/moneyIcon.png')}
+          source={require('../../../assets/icons/moneyIcon.png')}
           style={styles.icon}
         />
         <Text style={styles.description}>
@@ -32,7 +32,7 @@ function ExplanationCard() {
 
       <View style={styles.explanationContainer}>
         <Image
-          source={require('../../assets/icons/bodyIcon.png')}
+          source={require('../../../assets/icons/bodyIcon.png')}
           style={styles.icon}
         />
         <Text style={styles.description}>
@@ -43,7 +43,7 @@ function ExplanationCard() {
 
       <View style={styles.explanationContainer}>
         <Image
-          source={require('../../assets/icons/funIcon.png')}
+          source={require('../../../assets/icons/funIcon.png')}
           style={styles.icon}
         />
         <Text style={styles.description}>

@@ -4,13 +4,13 @@ import React from 'react'
 import { ScrollView, View, Text } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-import DefaultButton from '../../components/DefaultButton'
-import { ExplanationCard } from '../../components/ExplanationCard'
+import { DefaultButton } from '../../components/Common/DefaultButton'
+import { ExplanationCard } from '../../components/Common/ExplanationCard'
 
 function AppExplanation() {
   const navigation = useNavigation()
 
-  const handleNavHome = () => {
+  function handleNavHome() {
     navigation.navigate('Home')
   }
 
@@ -21,7 +21,7 @@ function AppExplanation() {
           <Text style={styles.title}>
             Antes, deixe {'\n'} eu te explicar ...
           </Text>
-          <ExplanationCard/>
+          <ExplanationCard />
           <Text style={styles.descriptionCta}>
             Pronto(a) para subir de nível na vida?
           </Text>
